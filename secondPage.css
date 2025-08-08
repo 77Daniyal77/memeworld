@@ -1,0 +1,97 @@
+body{
+background: #02587a;
+background: linear-gradient(90deg, rgba(2, 88, 122, 1) 8%, rgba(87, 199, 133, 1) 50%, rgba(237, 83, 83, 1) 81%);   
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    padding: 32px 28px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.result img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #f2f2f2;
+    box-shadow: 0 2px 12px rgba(2, 88, 122, 0.08);
+    border: 2px solid #e3e3e3;
+    transition: box-shadow 0.2s;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box input[type="text"] {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #b2d8d8;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #f8fafb;
+    color: #222;
+}
+
+.input-box input[type="text"]:focus {
+    border: 1.5px solid #57c785;
+    background: #fff;
+}
+
+.input-box button {
+    padding: 10px 22px;
+    background: linear-gradient(90deg, #57c785 0%, #ed5353 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(87, 199, 133, 0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.input-box button:hover {
+    background: linear-gradient(90deg, #ed5353 0%, #57c785 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 6vw 18px 6vw;
+    }
+    .result img {
+        width: 90vw;
+        height: 90vw;
+        max-width: 98vw;
+        max-height: 320px;
+    }
+    .input-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input-box input[type="text"], .input-box button {
+        width: 100%;
+    }
+}
