@@ -1,0 +1,24 @@
+#start{
+    width: 500px;
+height: 400px;
+border-radius: 15%;
+}
+.button{
+    text-decoration: none;
+    border: 1px solid blue;
+    background-color: rgb(0, 89, 255);
+    padding: 15px 7px;
+    border-radius: 15px;
+    color: white;
+margin-left: 700px;
+}
+.tuxt{
+margin-left: 600px;
+}
+body{
+    background: #027a46;
+background: linear-gradient(90deg, rgba(2, 122, 70, 1) 8%, rgba(87, 128, 199, 1) 37%, rgba(237, 160, 83, 1) 64%, rgba(237, 111, 83, 1) 96%);
+}
+.tuuxt{
+margin-left: 600px;
+}
